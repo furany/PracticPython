@@ -1,7 +1,11 @@
 print("n(n+1)/2) Enter n:")
-num = int(input())+1
-total= 0
-for i in range (num):
-    total = total + i
-print(total)
+
+try:
+    num = int(input())+1
+    total= 0
+    for i in range (num):
+        total = total + i
+    print(total)
+except ValueError:
+    print("You did not enter a number")
 input("Press enter to exit ;)")
